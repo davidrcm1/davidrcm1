@@ -181,16 +181,72 @@ flowchart TD
 
 ---
 
+
 ### 🗺️ [Autonomous Mobile Robot – SLAM & Frontier-Based Exploration](https://github.com/davidrcm1/AMR---SLAMs---Auto-exploration)
 
-Development of a ROS 2-based autonomous mobile robot capable of mapping and exploring unknown environments using LiDAR-based SLAM, autonomous navigation and custom frontier-based exploration algorithms.
+Development of a ROS 2-based autonomous mobile robot simulation capable of mapping and exploring unknown environments using LiDAR-based SLAM, autonomous navigation and custom frontier-based exploration algorithms.
 
-The system integrates a simulated differential-drive robot, A* path planning, obstacle avoidance and a custom HMI for manual control, autonomous exploration and map management.
+The system integrates a differential-drive robot, A* path planning, obstacle avoidance and autonomous navigation goal generation within a custom Gazebo simulation environment.
+
+#### 🎬 Autonomous Exploration Demonstration
 
 <p align="center">
   <img width="46%" src="https://github.com/user-attachments/assets/5d59412f-5fdf-4e9e-8f1c-8fc2bce17d98" />
   &nbsp;&nbsp;&nbsp;
   <img width="46%" src="https://github.com/user-attachments/assets/0076e57d-6cb4-4ce9-b327-87ec29d1f67d" />
+</p>
+
+#### ⚙️ System Architecture
+
+```mermaid
+flowchart TD
+    A[Gazebo Simulation] -->|LiDAR and Odometry| B[SLAM Toolbox]
+    B -->|Occupancy Grid| C[Frontier Detector]
+    C -->|Frontier Centroids| D[Frontier Explorer]
+    D -->|Navigation Goals| E[Nav2]
+    B -->|Map| E
+    E --> F[Differential Drive Controller]
+    F --> A
+```
+
+#### 🧠 Autonomous Exploration Algorithm
+
+```mermaid
+flowchart TD
+    A[Occupancy Grid] --> B[Detect Frontier Cells]
+    B --> C[BFS Frontier Clustering]
+    C --> D[Calculate Centroids]
+    D --> E[Select Eligible Frontier]
+    E --> F[A* Path Planning]
+    F --> G[Autonomous Navigation]
+    G --> A
+```
+
+Custom Python-based ROS 2 nodes identify boundaries between explored and unexplored regions, cluster frontier cells using Breadth-First Search and autonomously generate navigation goals.
+
+Previously visited and failed navigation targets are filtered to support continued exploration.
+
+#### 🛠️ Engineering Contributions
+
+- **Autonomous Navigation:** Nav2 integration, A* global planning and Regulated Pure Pursuit path following.
+- **Algorithm Development:** Custom frontier detection, BFS clustering, centroid calculation and autonomous goal selection.
+- **Robot Modelling:** URDF/Xacro robot description, differential-drive control and custom Gazebo environment.
+- **Software Integration:** ROS 2 nodes, TF2 transformations, asynchronous action interfaces and custom HMI.
+
+#### 🗺️ Mapping & Visualisation
+
+<p align="center">
+  <img width="46%" src="https://github.com/user-attachments/assets/939e101f-3d1f-4253-9869-0f2afddb71d9" />
+  &nbsp;&nbsp;&nbsp;
+  <img width="46%" src="https://github.com/user-attachments/assets/c5db8c38-f3af-4d12-9669-6c25aeade100" />
+</p>
+
+#### 💻 Operator Interface
+
+Custom Python-based HMI for manual robot control, autonomous exploration, system monitoring and occupancy grid export.
+
+<p align="center">
+  <img width="65%" src="https://github.com/user-attachments/assets/3bf4fd04-1647-404f-9455-6bcd6ec609eb" />
 </p>
 
 **Technologies and skills:**
@@ -203,9 +259,10 @@ The system integrates a simulated differential-drive robot, A* path planning, ob
 ![Path Planning](https://img.shields.io/badge/Path_Planning-00897B?style=flat-square)
 ![URDF](https://img.shields.io/badge/URDF-555555?style=flat-square)
 
----
+**[📂 View Full Project Documentation & Source Code](https://github.com/davidrcm1/AMR---SLAMs---Auto-exploration)**
 
 ---
+
 
 ### 🫀 [Physiological Pressure Waveform Replicator](https://github.com/davidrcm1/PID-Physiological-Pressure-Waveform-Replicator)
 
