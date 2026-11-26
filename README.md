@@ -85,8 +85,7 @@ The controller independently monitors multiple testing machines, enabling concur
 <p align="center">
   <img height="200" src="https://github.com/user-attachments/assets/87e8e526-d43f-4f46-8088-7491818d277e" />
   &nbsp;&nbsp;&nbsp;
-  <img height="200" src="https://github.com/user-attachments/assets/9331d728-75bd-4d1b-97d3-334a988ce33a" />
-  &nbsp;&nbsp;&nbsp;
+   <img width="45%" src="https://github.com/user-attachments/assets/6e921961-0f1e-43ce-a921-50f5a2c06127" />
   <img height="200" src="https://github.com/user-attachments/assets/f23b2757-07dc-4807-bba0-2bd9d71632b7" />
 </p>
 
