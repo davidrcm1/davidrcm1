@@ -41,12 +41,69 @@ My engineering experience spans mechanical design, embedded systems, robotic int
 
 ## 🚀 Featured Projects
 
+
 ### 🤖 [Robotic PCB Testing Cell](https://github.com/davidrcm1/PCB-Testing-COBOT)
 
-Development and integration of a robotic cell for automated PCB testing, including a Python-based controller application, machine communication and custom electromechanical mechanisms.
+Development and integration of an automated PCB testing cell using a Flexiv Rizon 4 collaborative robotic arm, integrating existing industrial testing equipment into a centralised automation system.
 
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b314935a-708a-4745-8a0d-cc8f9a267198)
+#### 🎬 System Demonstration
 
+<p align="center">
+  <img width="46%" src="https://github.com/user-attachments/assets/b314935a-708a-4745-8a0d-cc8f9a267198" />
+  &nbsp;&nbsp;&nbsp;
+  <img width="46%" src="https://github.com/user-attachments/assets/47f00add-5d25-4169-848b-7f75ca7c57d4" />
+</p>
+
+#### ⚙️ System Architecture
+
+```mermaid
+flowchart TD
+    H[Operator HMI] <--> C[Python Cell Controller]
+    C <-->|Serial Communication| M1[PCB Tester 1]
+    C <-->|Flexiv RDK| R[Flexiv Rizon 4]
+    C <-->|Serial Communication| M2[PCB Tester 2]
+    R --> P[PCB Handling and Sorting]
+```
+
+#### 🛠️ Engineering Contributions
+
+| Software & Robotics | Mechanical & Integration |
+|---|---|
+| Centralised Python controller | Electromechanical tray feeder |
+| Multithreaded task scheduling | Testing machine modifications |
+| Flexiv RDK integration | Custom mechanical fixtures |
+| Asynchronous serial communication | Robotic cell layout and CAD |
+| HMI and fault monitoring | Prototyping and functional testing |
+| Automated PASS/FAIL sorting | Equipment integration |
+
+#### 🔄 Automated Testing Workflow
+
+```mermaid
+flowchart LR
+    A[PCB Pickup] --> B[Scanning]
+    B --> C[Machine Loading]
+    C --> D[Testing]
+    D --> E[Machine Unloading]
+    E --> F[PASS / FAIL Sorting]
+```
+
+The controller independently monitors multiple testing machines, enabling concurrent testing cycles while coordinating access to a shared robotic arm.
+
+#### 📐 Mechanical Design & Prototyping
+
+<p align="center">
+  <img height="200" src="https://github.com/user-attachments/assets/87e8e526-d43f-4f46-8088-7491818d277e" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="200" src="https://github.com/user-attachments/assets/9331d728-75bd-4d1b-97d3-334a988ce33a" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="200" src="https://github.com/user-attachments/assets/f23b2757-07dc-4807-bba0-2bd9d71632b7" />
+</p>
+
+#### 💻 Controller Application & HMI
+
+<p align="center">
+  <img width="45%" src="https://github.com/user-attachments/assets/acaee83c-1137-4506-bf53-7fe8415fe9ed" />
+</p>
 
 **Technologies and skills:**
 
@@ -54,6 +111,9 @@ Development and integration of a robotic cell for automated PCB testing, includi
 ![Robotics](https://img.shields.io/badge/Robotics-333333?style=flat-square)
 ![CAD](https://img.shields.io/badge/CAD-555555?style=flat-square)
 ![System Integration](https://img.shields.io/badge/System_Integration-0078D4?style=flat-square)
+
+**[📂 View Full Project Documentation & Source Code](https://github.com/davidrcm1/PCB-Testing-COBOT)**
+
 
 ---
 
