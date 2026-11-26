@@ -110,13 +110,61 @@ The controller independently monitors multiple testing machines, enabling concur
 
 ### 🎯 [Vision-Based Tracking Turret](https://github.com/davidrcm1/Turret)
 
-Development of an embedded pan-and-tilt platform incorporating custom mechanical assemblies, stepper motor control and network-based communication, with computer vision integration under development.
+Design and development of a custom two-axis pan-and-tilt tracking platform integrating mechanical design, embedded motion control and computer vision.
+
+The system uses an ESP32-S3 to control two NEMA 17 stepper motors through A4988 motor drivers, with a belt-driven mechanical transmission for improved positioning resolution.
+
+#### 📐 Mechanical Design & Prototyping
 
 <p align="center">
-  <img width="43%" src="https://github.com/user-attachments/assets/9dd3a10e-7bd3-417a-829a-4167d98ed782" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="43%" src="https://github.com/user-attachments/assets/38680e2d-833d-4190-8e99-febef00e9e46" />
+  <img height="300" src="https://github.com/user-attachments/assets/9dd3a10e-7bd3-417a-829a-4167d98ed782" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img height="300" src="https://github.com/user-attachments/assets/38680e2d-833d-4190-8e99-febef00e9e46" />
 </p>
+
+#### ⚙️ System Architecture
+
+Proposed vision-based closed-loop control architecture:
+
+```mermaid
+flowchart TD
+    A[Camera] --> B[Computer Vision Processing]
+    B --> C[Tracking Error]
+    C --> D[Motion Commands]
+    D -->|Network Communication| E[ESP32-S3]
+    E --> F[Pan Motor Driver]
+    E --> G[Tilt Motor Driver]
+    F --> H[Pan Stepper Motor]
+    G --> I[Tilt Stepper Motor]
+    H --> J[Pan-Tilt Platform]
+    I --> J
+    J -.->|Visual Feedback| A
+```
+
+#### 🛠️ Engineering Contributions
+
+- **Mechanical Design:** Custom CAD assemblies, belt-driven transmissions, bearing-supported rotation and 3D-printed structural components.
+- **Embedded Development:** ESP32-S3 firmware, stepper motor control, acceleration configuration and position estimation.
+- **Electronics:** Motor driver integration, power distribution and microcontroller interfacing.
+- **Computer Vision:** Development of a vision-based tracking architecture with closed-loop position correction.
+
+#### 🔌 Electronics & Hardware Integration
+
+<p align="center">
+  <img width="65%" src="https://github.com/user-attachments/assets/1aee8d81-d0ab-4a54-bdd0-280e69a7c3cd" />
+</p>
+
+#### 📊 Hardware Configuration
+
+| Component | Specification |
+|---|---|
+| Microcontroller | ESP32-S3 |
+| Actuators | 2 × NEMA 17 stepper motors |
+| Motor drivers | 2 × A4988 |
+| Pan driven pulley | 142 teeth |
+| Tilt driven pulley | 60 teeth |
+| Power supply | 12 V DC |
+| Manufacturing | CAD and 3D printing |
 
 **Technologies and skills:**
 
@@ -127,6 +175,9 @@ Development of an embedded pan-and-tilt platform incorporating custom mechanical
 ![3D Printing](https://img.shields.io/badge/3D_Printing-FF6F00?style=flat-square)
 
 ![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=flat-square)
+
+**[📂 View Full Project Documentation & Source Code](https://github.com/davidrcm1/Turret)**
+
 
 ---
 
