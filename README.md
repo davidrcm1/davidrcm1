@@ -65,16 +65,7 @@ flowchart TD
     R --> P[PCB Handling and Sorting]
 ```
 
-#### 🛠️ Engineering Contributions
 
-| Software & Robotics | Mechanical & Integration |
-|---|---|
-| Centralised Python controller | Electromechanical tray feeder |
-| Multithreaded task scheduling | Testing machine modifications |
-| Flexiv RDK integration | Custom mechanical fixtures |
-| Asynchronous serial communication | Robotic cell layout and CAD |
-| HMI and fault monitoring | Prototyping and functional testing |
-| Automated PASS/FAIL sorting | Equipment integration |
 
 #### 🔄 Automated Testing Workflow
 
