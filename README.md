@@ -63,7 +63,7 @@ Development of an embedded pan-and-tilt platform incorporating custom mechanical
 
 <p align="center">
   <img width="35%" src="https://github.com/user-attachments/assets/9dd3a10e-7bd3-417a-829a-4167d98ed782" />
-  <img width="35%" src="SECOND_IMAGE_URL" />
+  <img width="35%" src="https://github.com/user-attachments/assets/38680e2d-833d-4190-8e99-febef00e9e46" />
 </p>
 
 **Technologies and skills:**
