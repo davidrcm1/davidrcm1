@@ -251,23 +251,73 @@ Custom Python-based HMI for manual robot control, autonomous exploration, system
 ---
 
 
+
 ### 🫀 [Physiological Pressure Waveform Replicator](https://github.com/davidrcm1/PID-Physiological-Pressure-Waveform-Replicator)
 
-Development of a closed-loop low-cost pressure control system using PID control to replicate physiological pressure waveforms.
+Design and development of a low-cost, Arduino-based closed-loop pressure control system for physiological pressure waveform replication in clinical research applications.
+
+The project combines embedded control, PID feedback control and MATLAB-based physiological waveform processing to reproduce time-varying pressure profiles.
+
+#### ⚙️ Closed-Loop Control Architecture
+
+```mermaid
+flowchart LR
+    A[Reference Pressure] --> B((Error))
+    B --> C[PID Controller]
+    C --> D[Pressure Actuation]
+    D --> E[Pressure System]
+    E --> F[Pressure Measurement]
+    F -->|Feedback| B
+```
+
+The feedback control system continuously compares the reference pressure waveform against the measured pressure and adjusts the control output to minimise tracking error.
+
+#### 📈 System Development & Experimental Results
 
 <p align="center">
-  <img width="48%" src="https://github.com/user-attachments/assets/ee4ad0fe-b115-43e5-be23-fb8d609525c1" />
-  <img width="48%" src="https://github.com/user-attachments/assets/94660073-00e3-4a32-89ef-45cb077c2824" />
+  <img width="46%" src="https://github.com/user-attachments/assets/ee4ad0fe-b115-43e5-be23-fb8d609525c1" />
+  &nbsp;&nbsp;&nbsp;
+  <img width="46%" src="https://github.com/user-attachments/assets/94660073-00e3-4a32-89ef-45cb077c2824" />
 </p>
+
+<p align="center">
+  <img width="70%" src="https://github.com/user-attachments/assets/0cad269f-f240-4f41-bc53-06298bc3ddb2" />
+</p>
+
+#### 🧮 Physiological Waveform Processing
+
+```mermaid
+flowchart TD
+    A[Physiological Pressure Dataset] --> B[MATLAB Processing]
+    B --> C[Unit Conversion]
+    C --> D[Time Scaling and Resampling]
+    D --> E[Reference Waveform CSV]
+    E --> F[Arduino Controller]
+    F --> G[Closed-Loop Pressure Control]
+```
+
+MATLAB is used to process physiological pressure datasets, convert pressure units, adjust waveform duration and resample the reference signal for embedded controller execution.
+
+
+#### 📄 Research Documentation
+
+The project repository includes the thesis report, MATLAB waveform processing script and reference waveform datasets.
+
+[View Engineering Thesis Report](https://github.com/davidrcm1/PID-Physiological-Pressure-Waveform-Replicator/blob/main/ThesisC_z5267332_REPORT.pdf)
 
 **Technologies and skills:**
 
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-E16737?style=flat-square)
 ![PID Control](https://img.shields.io/badge/PID_Control-0078D4?style=flat-square)
 ![Control Systems](https://img.shields.io/badge/Control_Systems-333333?style=flat-square)
+![Signal Processing](https://img.shields.io/badge/Signal_Processing-555555?style=flat-square)
 ![Biomedical Engineering](https://img.shields.io/badge/Biomedical_Engineering-E63946?style=flat-square)
-![System Validation](https://img.shields.io/badge/System_Validation-555555?style=flat-square)
+
+**[📂 View Full Project Documentation & Research](https://github.com/davidrcm1/PID-Physiological-Pressure-Waveform-Replicator)**
 
 ---
+
 
 ## 🔬 Engineering Interests
 
