@@ -141,13 +141,6 @@ flowchart TD
     J -.->|Visual Feedback| A
 ```
 
-#### 🛠️ Engineering Contributions
-
-- **Mechanical Design:** Custom CAD assemblies, belt-driven transmissions, bearing-supported rotation and 3D-printed structural components.
-- **Embedded Development:** ESP32-S3 firmware, stepper motor control, acceleration configuration and position estimation.
-- **Electronics:** Motor driver integration, power distribution and microcontroller interfacing.
-- **Computer Vision:** Development of a vision-based tracking architecture with closed-loop position correction.
-
 #### 🔌 Electronics & Hardware Integration
 
 <p align="center">
@@ -226,12 +219,6 @@ Custom Python-based ROS 2 nodes identify boundaries between explored and unexplo
 
 Previously visited and failed navigation targets are filtered to support continued exploration.
 
-#### 🛠️ Engineering Contributions
-
-- **Autonomous Navigation:** Nav2 integration, A* global planning and Regulated Pure Pursuit path following.
-- **Algorithm Development:** Custom frontier detection, BFS clustering, centroid calculation and autonomous goal selection.
-- **Robot Modelling:** URDF/Xacro robot description, differential-drive control and custom Gazebo environment.
-- **Software Integration:** ROS 2 nodes, TF2 transformations, asynchronous action interfaces and custom HMI.
 
 #### 🗺️ Mapping & Visualisation
 
