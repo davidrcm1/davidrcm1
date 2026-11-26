@@ -61,6 +61,8 @@ Development and integration of a robotic cell for automated PCB testing, includi
 
 Development of an embedded pan-and-tilt platform incorporating custom mechanical assemblies, stepper motor control and network-based communication, with computer vision integration under development.
 
+<img width="1536" height="2048" alt="2f7d8cb3-8989-4bfb-986b-2ada7bba075c" src="https://github.com/user-attachments/assets/9dd3a10e-7bd3-417a-829a-4167d98ed782" />
+
 **Technologies and skills:**
 
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
@@ -75,7 +77,12 @@ Development of an embedded pan-and-tilt platform incorporating custom mechanical
 
 ### 🫀 [Physiological Pressure Waveform Replicator](https://github.com/davidrcm1/PID-Physiological-Pressure-Waveform-Replicator)
 
-Development of a closed-loop pressure control system using PID control to replicate physiological pressure waveforms.
+Development of a closed-loop low-cost pressure control system using PID control to replicate physiological pressure waveforms.
+
+<p align="center">
+  <img width="48%" src="https://github.com/user-attachments/assets/ee4ad0fe-b115-43e5-be23-fb8d609525c1" />
+  <img width="48%" src="https://github.com/user-attachments/assets/94660073-00e3-4a32-89ef-45cb077c2824" />
+</p>
 
 **Technologies and skills:**
 
