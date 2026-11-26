@@ -62,8 +62,9 @@ Development and integration of a robotic cell for automated PCB testing, includi
 Development of an embedded pan-and-tilt platform incorporating custom mechanical assemblies, stepper motor control and network-based communication, with computer vision integration under development.
 
 <p align="center">
-  <img width="35%" src="https://github.com/user-attachments/assets/9dd3a10e-7bd3-417a-829a-4167d98ed782" />
-  <img width="35%" src="https://github.com/user-attachments/assets/38680e2d-833d-4190-8e99-febef00e9e46" />
+  <img width="43%" src="https://github.com/user-attachments/assets/9dd3a10e-7bd3-417a-829a-4167d98ed782" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img width="43%" src="https://github.com/user-attachments/assets/38680e2d-833d-4190-8e99-febef00e9e46" />
 </p>
 
 **Technologies and skills:**
