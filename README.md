@@ -79,6 +79,32 @@ Development of an embedded pan-and-tilt platform incorporating custom mechanical
 
 ---
 
+### 🗺️ [Autonomous Mobile Robot – SLAM & Frontier-Based Exploration](https://github.com/davidrcm1/AMR---SLAMs---Auto-exploration)
+
+Development of a ROS 2-based autonomous mobile robot capable of mapping and exploring unknown environments using LiDAR-based SLAM, autonomous navigation and custom frontier-based exploration algorithms.
+
+The system integrates a simulated differential-drive robot, A* path planning, obstacle avoidance and a custom HMI for manual control, autonomous exploration and map management.
+
+<p align="center">
+  <img width="46%" src="https://github.com/user-attachments/assets/5d59412f-5fdf-4e9e-8f1c-8fc2bce17d98" />
+  &nbsp;&nbsp;&nbsp;
+  <img width="46%" src="https://github.com/user-attachments/assets/0076e57d-6cb4-4ce9-b327-87ec29d1f67d" />
+</p>
+
+**Technologies and skills:**
+
+![ROS2](https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Gazebo](https://img.shields.io/badge/Gazebo-F58113?style=flat-square)
+![SLAM](https://img.shields.io/badge/SLAM-0078D4?style=flat-square)
+![Nav2](https://img.shields.io/badge/Nav2-333333?style=flat-square)
+![Path Planning](https://img.shields.io/badge/Path_Planning-00897B?style=flat-square)
+![URDF](https://img.shields.io/badge/URDF-555555?style=flat-square)
+
+---
+
+---
+
 ### 🫀 [Physiological Pressure Waveform Replicator](https://github.com/davidrcm1/PID-Physiological-Pressure-Waveform-Replicator)
 
 Development of a closed-loop low-cost pressure control system using PID control to replicate physiological pressure waveforms.
