@@ -83,11 +83,11 @@ The controller independently monitors multiple testing machines, enabling concur
 #### 📐 Mechanical Design & Prototyping
 
 <p align="center">
-  <img height="200" src="https://github.com/user-attachments/assets/87e8e526-d43f-4f46-8088-7491818d277e" />
+  <img height="250" src="https://github.com/user-attachments/assets/87e8e526-d43f-4f46-8088-7491818d277e" />
   &nbsp;&nbsp;&nbsp;
-   <img width="45%" src="https://github.com/user-attachments/assets/6f4b7fdc-f010-4261-8297-5cbcc678080b" />
+  <img height="250" src="https://github.com/user-attachments/assets/6f4b7fdc-f010-4261-8297-5cbcc678080b" />
   &nbsp;&nbsp;&nbsp;
-  <img height="200" src="https://github.com/user-attachments/assets/f23b2757-07dc-4807-bba0-2bd9d71632b7" />
+  <img height="250" src="https://github.com/user-attachments/assets/f23b2757-07dc-4807-bba0-2bd9d71632b7" />
 </p>
 
 #### 💻 Controller Application & HMI
