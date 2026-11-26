@@ -45,6 +45,9 @@ My engineering experience spans mechanical design, embedded systems, robotic int
 
 Development and integration of a robotic cell for automated PCB testing, including a Python-based controller application, machine communication and custom electromechanical mechanisms.
 
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b314935a-708a-4745-8a0d-cc8f9a267198)
+
+
 **Technologies and skills:**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
