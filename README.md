@@ -144,8 +144,7 @@ flowchart TD
 #### 🔌 Electronics & Hardware Integration
 
 <p align="center">
-  <img width="1007" height="643" alt="Screenshot 2026-11-26 161642" src="https://github.com/user-attachments/assets/85b9ea78-220b-4b68-a1d5-9de8d633e794" />
-
+  <img width="850" alt="Electrical Wiring Schematic" src="https://github.com/user-attachments/assets/514ca18e-693b-4d3b-9cc3-6fa2731c32c4" />
 </p>
 
 #### 📊 Hardware Configuration
